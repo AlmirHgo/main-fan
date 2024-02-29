@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section style="text-align:center; color:aqua">
+					<h1 style="font-size: 2em; color: #05fcdb;">ESTADO DE RELACION 'R'</h1>
+                    <img src="https://i.blogs.es/2b4f5a/gbd-entero/650_1200.png" alt=".." style="width: 600px;">
+                </section>
+                <section>
+                    <h1>ESTADO DE LA RELACION EN UN MOMENTO DADO</h1>
+                    <h2>RELFEJA SOLO LAS TUPLAS VALIDAS QUE REPRESENTAN UN ESTADO PARTICULAR DEL MUNDO REAL </h2>
+                    <h3>BÁSICAMENTE PROPORCIONA INFORMACIÓN SOBRE CÓMO ESTÁ LA TABALA EN UN MOMENTO DADO</h3>
+                </section>
+				<section>
+					<li>Estructura de la tabla: Esto incluye el nombre de la tabla, los nombres y tipos de datos de cada columna, las restricciones de integridad (como claves primarias, claves foráneas, restricciones de unicidad.)</li>
+					<li>Número de filas: La cantidad total de filas que tiene la tabla en ese momento.</li>
+				</section>
+				<section>
+					<li>Estadísticas de las columnas: Pueden incluir información como el número de valores únicos, el rango de valores, el tamaño de los datos, entre otros.</li>
+					<li>Espacio utilizado por la tabla: Cuánto espacio en disco está ocupando la tabla y sus índices.</li>
+				</section>
+				<section>
+					<li>Índices: Información sobre los índices definidos en la tabla, incluyendo el nombre del índice, las columnas indexadas y su tipo.</li>
+					<li>Estadísticas de uso: Información sobre la frecuencia con la que se accede a la tabla, las operaciones de lectura y escritura realizadas en ella, entre otros.</li>
+				</section>
+				<section>
+					<h1>
+						El "estado de relación" en una base de datos se refiere a la situación actual de una tabla en términos de su estructura, contenido y estadísticas relacionadas con ella. Básicamente, proporciona información sobre cómo está la tabla en un momento dado. Algunos aspectos que podrían incluirse en el estado de relación de una tabla son:
+						
+						Estructura de la tabla: Esto incluye el nombre de la tabla, los nombres y tipos de datos de cada columna, las restricciones de integridad (como claves primarias, claves foráneas, restricciones de unicidad, etc.).
+						
+						Número de filas: La cantidad total de filas que tiene la tabla en ese momento.
+						
+						Estadísticas de las columnas: Pueden incluir información como el número de valores únicos, el rango de valores, el tamaño de los datos, entre otros.
+						
+						Espacio utilizado por la tabla: Cuánto espacio en disco está ocupando la tabla y sus índices.
+						
+						Índices: Información sobre los índices definidos en la tabla, incluyendo el nombre del índice, las columnas indexadas y su tipo.
+						
+						Estadísticas de uso: Información sobre la frecuencia con la que se accede a la tabla, las operaciones de lectura y escritura realizadas en ella, entre otros.
+						
+						El estado de relación es útil para los administradores de bases de datos y desarrolladores para comprender y optimizar el rendimiento de las consultas, la utilización del espacio en disco y la integridad de los datos en la base de datos.</h1>
+				</section>
+				
+			</div>
+		</div>	
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
